@@ -1,0 +1,28 @@
+@endpoint = https://msrofh2f9d.execute-api.ap-south-1.amazonaws.com/prod/
+
+
+GET {{endpoint}}/spaces/
+###
+GET {{endpoint}}/spaces?spaceId=4a316e26-87fd-4076-ad13-44785eed97c6
+###
+POST {{endpoint}}/spaces/
+Content-Type: application/json
+    
+    {
+    "location": "Brussels",
+    "name": "Bad Location"
+    }
+
+###
+PUT {{endpoint}}/spaces?spaceId=4a316e26-87fd-4076-ad13-44785eed97c6
+Content-Type: application/json
+    
+    {
+    "location": "somewhere",
+    "name": "Bad Location"
+    }
+###
+DELETE {{endpoint}}/spaces?spaceId=4a316e26-87fd-4076-ad13-44785eed97c6
+###
+
+
